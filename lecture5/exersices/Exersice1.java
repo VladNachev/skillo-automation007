@@ -1,22 +1,14 @@
 package lecture5.exersices;
 
+//Write program to print sum of a given array elements
 public class Exersice1 {
     public static void main(String[] args) {
-        System.out.println(smallestNumber(123, 34, 45));
-
-    }
-    public static int smallestNumber(int a, int b, int c) {
-        int number = 0;
-        if ((a < b) && (a < c)) {
-            number = a;
+        int[] myArray = {2, 4, 6, 8, 10};
+        int sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            sum += myArray[i];
         }
-        if ((b < a) && (b < c)) {
-            number = b;
-        }
-        if ((c < a) && (c < b)) {
-            number = c;
-        }
-        return number;
+        System.out.println("Sum of array elements: " + sum);
 
     }
 }
