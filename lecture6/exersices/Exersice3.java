@@ -33,7 +33,7 @@ public class Exersice3 {
         middleChar = word.charAt(middleIndex);
         nexChar = word.charAt(middleIndex - 1);
 
-        String strConcatenate = String.format("%s%s", middleChar, nexChar);
+        String strConcatenate = String.format("%s%s", nexChar, middleChar);
         return strConcatenate;
     }
 }
